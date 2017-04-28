@@ -1,7 +1,7 @@
 FROM scratch
 ADD amzn-container-minimal-2016.09.1.20161221-x86_64.tar.xz /
 # install build tools 
-RUN yum install -y wget make automake gcc gcc-c++ kernel-devel git-core libffi-devel
+RUN yum install -y wget make automake gcc gcc-c++ kernel-devel git-core libffi-devel openssl-devel
 
 RUN yum update -y
 RUN yum install -y python27 python27-devel
